@@ -106,6 +106,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-mock-store": "^1.5.3",
     "serve": "^11.2.0",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   },
   "prettier": "@chainlink/prettier-config"

@@ -1,10 +1,12 @@
 module.exports = {
+  preset: 'ts-jest/presets/js-with-ts',
   moduleDirectories: ['node_modules', '<rootDir>/src/', '<rootDir>/support/'],
   setupFiles: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: [
     '<rootDir>/dist/',
     '<rootDir>/tmp/',
-    '<rootDir>/node_modules/',
+    // '<rootDir>/node_modules/',
+    '<rootDir>/node_modules/(?!(@chainlink/json-api-client)/)',
     '<rootDir>/__tests__/.eslintrc.js',
   ],
   moduleNameMapper: {
